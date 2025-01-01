@@ -4,18 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Mohd Sahib Raza, Frontend Developer with expertise in HTML, CSS, JavaScript, Python, and more.">
+    <meta name="description"
+        content="Personal portfolio of Mohd Sahib Raza, Frontend Developer with expertise in HTML, CSS, JavaScript, Python, and more.">
     <title>Mohd Sahib Raza | Frontend Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Header -->
+
     <header>
         <nav>
             <div><img src="profile.jpg" alt=""></div>
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
             <ul>
                 <li><a href="#hero" class="btn">Home</a></li>
                 <li><a href="#about" class="btn">About Me</a></li>
@@ -25,6 +32,18 @@
             </ul>
         </nav>
     </header>
+
+    <div class="mobile-menu">
+        <div><img src="profile.jpg" alt=""></div>
+        
+        <ul>
+            <li><a href="#hero" class="btn">Home</a></li>
+            <li><a href="#about" class="btn">About Me</a></li>
+            <li><a href="#skills" class="btn">Skills</a></li>
+            <li><a href="#projects" class="btn">Projects</a></li>
+            <li><a href="#contact" class="btn">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section id="hero" class="section">
@@ -39,7 +58,8 @@
             <img src="profile.jpg" alt="Mohd Sahib Raza">
         </div>
         <h2>About Me</h2>
-        <p>I'm a passionate frontend developer with expertise in HTML, CSS, JavaScript, Python, and a strong foundation in web development technologies. I enjoy solving problems and creating intuitive user experiences.</p>
+        <p>I'm a passionate frontend developer with expertise in HTML, CSS, JavaScript, Python, and a strong foundation
+            in web development technologies. I enjoy solving problems and creating intuitive user experiences.</p>
     </section>
 
     <!-- Skills Section -->
@@ -54,7 +74,6 @@
             <div class="skill">SEO</div>
             <div class="skill">Digital Marketing</div>
             <div class="skill">Email Marketing</div>
-            <div class="skill">GitHub</div>
         </div>
     </section>
 
@@ -65,22 +84,27 @@
             <div class="project">
                 <h3>Personal Portfolio Website</h3>
                 <p>A personal portfolio showcasing my skills and projects.</p>
-                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on GitHub</button>
+                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on
+                    GitHub</button>
             </div>
             <div class="project">
                 <h3>QR Code-based Cafe Ordering System</h3>
                 <p>A QR code-based cafe ordering system using HTML, CSS, JavaScript, Python (Flask), and MySQL.</p>
-                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on GitHub</button>
+                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on
+                    GitHub</button>
             </div>
             <div class="project">
                 <h3>Student & College Management Systems</h3>
-                <p>A web application for managing students and colleges using similar tech stack (HTML, CSS, JS, Python, MySQL).</p>
-                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on GitHub</button>
+                <p>A web application for managing students and colleges using similar tech stack (HTML, CSS, JS, Python,
+                    MySQL).</p>
+                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on
+                    GitHub</button>
             </div>
             <div class="project">
                 <h3>Expense Tracker</h3>
                 <p>An expense tracker web app built purely with Python.</p>
-                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on GitHub</button>
+                <button class="btn" onclick="window.open('https://github.com/sahibturk', '_blank')">View on
+                    GitHub</button>
             </div>
         </div>
     </section>
@@ -88,10 +112,12 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn. I am open to freelance opportunities and collaborations!</p>
+        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn. I am open to
+            freelance opportunities and collaborations!</p>
         <div class="contact-buttons">
             <button class="btn" onclick="window.location.href='mailto:mohdsahibraza8@gmail.com'">Send an Email</button>
-            <button class="btn" onclick="window.open('https://www.linkedin.com/in/mohdsahibraza/')">Connect on LinkedIn</button>
+            <button class="btn" onclick="window.open('https://www.linkedin.com/in/mohdsahibraza/')">Connect on
+                LinkedIn</button>
             <button class="btn" onclick="window.location.href='tel:+6398737388'">Call Me</button>
         </div>
     </section>

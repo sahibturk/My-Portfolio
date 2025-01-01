@@ -1,4 +1,29 @@
 // Function to download the resume when the 'Download Resume' button is clicked
+
+// hameburger
+
+const hamburger = document.querySelector('.fa-bars');
+
+const cross = document.querySelector('.fa-xmark');
+
+const mobieMenu = document.querySelector('.mobile-menu');
+
+
+
+hamburger.addEventListener('click', () => {
+    mobieMenu.style.display = 'block';
+    hamburger.style.display = 'none';
+    cross.style.display = 'block';
+
+});
+
+cross.addEventListener('click', () => {
+    mobieMenu.style.display = 'none';
+    hamburger.style.display = 'block';
+    cross.style.display = 'none';
+})
+
+
 document.getElementById('download-resume').addEventListener('click', function (e) {
     e.preventDefault();
     const link = document.createElement('a');
